@@ -5,3 +5,31 @@ html {
 *, ::before, ::after{
     box-sizing: inherit;
 }
+
+.mainCanvas {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.meter {
+    width: 100%;
+    position: relative;
+}
+
+.meter::-webkit-meter-optimum-value{
+    background:red;
+}
+
+.meter::-webkit-meter-suboptimum-value{
+    background: yellow;
+}
+
+.meter::-webkit-meter-even-less-good-value{
+    background: rgb(49, 201, 49);
+}
+
+.messure {
+    display: flex;
+    justify-content: center;
+}
